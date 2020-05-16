@@ -1,0 +1,69 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400&display=swap&subset=latin-ext");
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+body {
+    font-size: 2em;
+    margin: auto 0;
+    background: url('images/drums-bw-bg.jpg');
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.drum {
+    background: rgb(20, 20, 20);
+    padding: 10px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    box-shadow: 0px 0px 10px rgba(20, 20, 20, 1);
+    font-family: Roboto;
+}
+
+.drum__name {
+    grid-column: span 3;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+    font-size: 50px;
+}
+
+.drum__button {
+    font-size: 40px;
+    color: white;
+    margin: 5px;
+    border: 4px solid white;
+    border-radius: 10px;
+    width: 100px;
+    height: 100px;
+    background: rgb(37, 37, 37);
+    transition: all 0.07s;
+}
+
+.drum__sound {
+    display: block;
+    font-size: 10px;
+    color: gray;
+    text-transform: uppercase;
+}
+
+.playing__orange {
+    transform: scale(1.05);
+    border-color: goldenrod;
+    box-shadow: 0px 0px 50px goldenrod;
+}
+
+.playing__pink {
+    transform: scale(1.05);
+    border-color: magenta;
+    box-shadow: 0px 0px 50px magenta;
+}
+
+.playing__cyan {
+    transform: scale(1.05);
+    border-color: cyan;
+    box-shadow: 0px 0px 50px cyan;
+}
